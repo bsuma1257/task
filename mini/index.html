@@ -1,0 +1,749 @@
+<html>
+    <head>
+        <title>project</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                width: 600px;
+                font-family: Arial, sans-serif;
+            }
+            .search-container {
+                margin-top: -75px;
+                margin-left: 250px;
+            }
+        
+            .search-input {
+                padding: 8px 10px;
+                width: 200px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+        
+            .search-button {
+                padding: 7px 16px;
+                border: none;
+                background-color: #d294be;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            #icon{
+                background-color: rgb(250, 215, 234);  
+                width: 1250px; 
+                display: inline-block;
+                 position: fixed;
+            
+            }
+          h2{
+              text-align: center;
+              
+            }
+            
+            #name{
+               background-color: rgb(237, 154, 212);
+               display: inline-block;
+               width: 1250px;
+                padding-top: 90px;
+               
+            } 
+           
+            #list{
+                margin: 10px;
+                width: 100px;
+                height:30px;
+                padding: 30px;
+                display:inline-flex;
+               
+            }  
+            #one{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #two{
+                display: inline-block;
+                margin: 7px;
+            }
+            #three{
+                display: inline-block;
+                margin: 7px;
+            }
+            #four{
+                display: inline-block;
+                margin: 7px;
+            }
+            #five{
+                display: inline-block;
+                margin: 7px;
+            }
+            #six{
+                display: inline-block;
+                margin: 7px;
+            }
+            #seven{
+                display: inline-block;
+                margin: 7px;
+            }
+            .trend{
+                margin: 120px;
+                width: 100%;
+                height:250px;
+                padding: 50px;
+                display:inline-flex;
+                gap: 10px;
+               
+                
+            }
+            #im1{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #im2{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #im3{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #im4{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #bd1{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #bd2{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #bd3{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            #bd4{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            .bd .b1{
+                display: inline-block;
+                margin: 30px;
+                text-align: end;
+               
+               
+            }
+            .bd{
+                display: inline-block;
+                width: 1200px;
+               border: solid rgb(234, 227, 227);
+                background-color: rgb(244, 222, 241);
+                margin: 10px;
+                margin-top: -50px;
+                gap: 5px;
+                border-radius: 25px;
+                padding: 20px;
+                
+
+            }
+            .Ann{
+                display: inline-block;
+                width: 1200px;
+               border: solid rgb(234, 227, 227);
+                background-color: rgb(244, 222, 241);
+                margin: 10px;
+                margin-top: -20px;
+                gap: 5px;
+                border-radius: 25px;
+                padding: 20px;
+                
+
+            }
+            .anniversary{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            .Flower{
+                display: inline-block;
+                width: 1200px;
+               border: solid rgb(234, 227, 227);
+                background-color: rgb(244, 222, 241);
+                margin: 10px;
+                margin-top: -10px;
+                gap: 5px;
+                border-radius: 25px;
+                padding: 20px;
+                
+
+            }
+            .gift{
+
+                display: inline-block;
+                width: 1200px;
+               border: solid rgb(234, 227, 227);
+                background-color: rgb(244, 222, 241);
+                margin: 10px;
+                margin-top: -10px;
+                gap: 5px;
+                border-radius: 25px;
+                padding: 20px;
+
+            }
+            .rose{
+                display: inline-block;
+                margin: 7px;
+               
+               
+            }
+            h1{
+
+                padding: 15px;
+                padding-top: 0px;
+                
+            }
+            nav {
+                background-color: #f4b0d9; /* Light orange color */
+                padding: -50px;
+                margin-top: -80px;
+                display: flex;
+                width: 1250px;
+                height: 120px;
+                justify-content: space-between;
+                align-items: center;
+              }
+              
+              .logo img {
+                width: 80px;
+                height: 60px;
+                margin-right: 10px;
+                margin-top: 5px;
+              }
+              
+              .nav-links {
+                list-style: none;
+                margin: 2px;
+               text-align: right;
+                padding: 5px;
+                display: flex;
+                margin-right: 0%;
+                margin-left: 650px;
+                padding-right: 100 px;
+                margin-top: 10px;
+                
+              }
+             
+              
+              .nav-links li {
+                margin-right: 40px;
+                
+              }
+              
+              .nav-links li a {
+                text-decoration: none;
+                color: #222; /* Dark grey color */
+                font-weight: bold;
+                margin-right: 30px;
+              }
+              
+              .content {
+                padding: 10px;
+              }
+              .brand{
+                display: flex;
+                margin-top: -14px;
+                margin-left: 40px;
+                margin-right: 90%;
+                padding: 0px;
+              }
+
+              
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  
+}
+
+/* Caption text */
+.text {
+  color: #c51cbc;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-style: oblique;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 95%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dott{
+margin-left: 96%;
+display: inline-flex;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .about-section {
+    margin-bottom: 40px;
+  }
+  .about-section h2 {
+    color:black;
+  }
+  .about-section p {
+    line-height: 1.6;
+  }
+  footer {
+    background-color: #080000f1;
+    color: #bc6464;
+    padding: 20px 0;
+    text-align: center;
+    width: 1200px;
+  }
+  footer p {
+    margin: 5px 0;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .social-media {
+    margin-top: 20px;
+  }
+  .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+  }
+  .subscription-form {
+    margin-top: 20px;
+  }
+  .subscription-form input[type="email"] {
+    padding: 8px;
+    width: 200px;
+  }
+  .subscription-form input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .business-hours {
+    margin-top: 20px;
+  }
+  .business-hours p {
+    margin: 5px 0;
+  }
+  .map-location {
+    margin-top: 20px;
+  }
+  span{
+    color: rgb(235, 20, 170);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: #ec5175;
+    margin-left: 45%;
+    padding: 0%;
+    width: 90%;
+    display: flex;
+    
+  }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+               
+                    <div class="logo">
+                      <img src="https://cdn-icons-png.flaticon.com/128/1182/1182138.png" width="100" height=80"" alt="Bakery Logo">
+                    </div>
+                   
+                    <nav>
+                    <ul class="nav-links">
+                      <li><a href="#Home">Home</a></li>
+                      <li><a href="./menu.html">Menu</a></li>
+                      <li><a href="./special.html">Specials</a></li>
+    
+                      <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                  
+             
+               <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search Here">
+                <button class="search-button">Search</button>
+                </div>
+            </div> 
+        </div>  
+
+            
+
+
+            <div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="https://images-na.ssl-images-amazon.com/images/I/81gVjQ9ehmL._SL1331_.jpg" width="1240" height="400">
+                      <div class="text">WELCOME</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="https://www.morinebakery.com/admin/banner/57.jpg" width="1240" height="400">
+                      <div class="text">WELCOME</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="https://elements-cover-images-0.imgix.net/f3b8ab19-9b0f-4af2-88b6-338ad5341c91?auto=compress%2Cformat&fit=max&w=710&s=cc90a2fbde883cefc23d0d63897dba9c" width="1240" height="400">
+                      <div class="text">WELCOME</div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div class="dott">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                    
+
+            </div>
+
+         <div id="Home">
+            <div id="list">
+              <div id="one">
+                 <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/New-Squircle-Icon_Holi.jpg"  width="150" height="150">
+                <h3>Holi Gifts</h3>
+              </div>
+                <div id="two">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/1-Bday.jpg" width="150" height="150">
+                 <h3>Birth Day</h3>
+                </div>
+
+                <div id="three">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/New-Squircle-Icon_Best-of-Flowers%20(2).jpg" width="150" height="150">
+                 <h3>Flowers</h3>
+                </div>
+
+                <div id="four">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/cakes%20squircle%20icon.jpg" width="150" height="150">
+               <h3>Cakes</h3>
+            
+               </div>
+
+               <div id="five">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/New-Squircle-Icon_Combos.jpg" width="150" height="150">
+              <h3>Combos</h3>
+              </div>
+
+               <div id="six">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/7-for-him-2.jpg" width="150" height="150">
+               <h3>For Him</h3>
+               </div>
+
+                <div id="seven">
+                <img src="https://www.fnp.com/assets/images/custom/new-desk-home/hero-banners/4-unique-gifts_2.jpg" width="150" height="150">
+              <h3>For HER</h3>
+               </div>
+            </div>
+        </div>
+
+        <div>
+            
+            <div class="trend">
+              
+              <div id="im1">
+                 <img src="https://imgcdn.floweraura.com/pull_me_up_cake_desktop_0.jpg?tr=w-298,h-298,dpr-1.5,q-70"  width="200" height="200">
+                 <h3>Pull me up cake</h3>
+                </div>
+
+              <div id="im2"> 
+                 <img src="https://imgcdn.floweraura.com/bomb_cake_2.jpg?tr=w-298,h-298,dpr-1.5,q-70"  width="200" height="200">
+                <h3>Bomb Cake</h3>
+                </div>
+
+              <div id="im3"> 
+                 <img src="https://imgcdn.floweraura.com/pinata_cake_desktop_0.jpg?tr=w-298,h-298,dpr-1.5,q-70"  width="200" height="200">
+                <h3>Pinata cakes</h3>
+                </div>
+
+               <div id="im4"> 
+                <img src="https://imgcdn.floweraura.com/desserts_0.jpg?tr=w-298,h-298,dpr-1.5,q-70"  width="200" height="200">
+               <h3>Desserts</h3>
+                </div> 
+            </div>
+        </div>
+
+      
+       
+       <div class="bd">
+          <div>
+            <h3>Birth day Cakes</h3>
+          </div>
+         <div id="bd1">
+            <img src="https://imgcdn.floweraura.com/happy-birthday-vanilla-cake-9794330ca-A_0.jpg?tr=w-264,dpr-1.5,q-70" width="220" height="180">
+         </div>
+         <div id="bd2">
+          <img src="https://imgcdn.floweraura.com/decadent-chocolate-cake-with-birthday-topper-9936880ca-AA.jpg?tr=w-264,dpr-1.5,q-70" width="200" height="180">
+         </div>
+
+          <div id="bd3">
+            <img src="https://imgcdn.floweraura.com/cool-blue-birthday-mini-cream-cake-9800510ca-A.jpg?tr=w-264,dpr-1.5,q-70" width="200" height="180">
+           </div>
+
+           <div id="bd4">
+            <img src="https://imgcdn.floweraura.com/decadent-black-forest-cake-with-birthday-topper-9814460ca-A_0.jpg?tr=w-264,dpr-1.5,q-70" width="200" height="180">
+           </div>
+           <div id="bd4">
+            <img src="https://imgcdn.floweraura.com/amusing-kitkat-cake-9954020ca-AA.jpg?tr=w-264,dpr-1.5,q-70" width="220" height="180">
+           </div>
+          <div class="b1">
+            <a href="./Bcakes.html"> <button>view More</button></a>
+          </div>
+          
+       </div>
+   
+       
+       
+
+
+
+
+
+       <div class="Ann">
+        <div> 
+           <h3>Anniversary Cakes</h3>
+        </div>
+        <div class="anniversary">
+        <img src="https://www.fnp.com/images/pr/l/v200/red-velvet-fresh-cream-cake-half-kg_1.jpg" width="200" height="180">
+        </div>
+      <div class="anniversary">
+       <img src="https://www.fnp.com/images/pr/l/v200/vanilla-bliss-in-pink-hakf-kg_1.jpg" width="220" height="180">
+      </div>
+
+      <div class="anniversary">
+       <img src="https://www.fnp.com/images/pr/l/v200/heart-shaped-cream-chocolate-cake-half-kg_1.jpg" width="220" height="180">
+      </div>
+
+      <div class="anniversary">
+       <img src="https://www.fnp.com/images/pr/l/v200/happy-anniversary-heart-shaped-cake-half-kg_1.jpg" width="200" height="180">
+      </div>
+      <div class="anniversary">
+       <img src="https://www.fnp.com/images/pr/l/v200/valentine-s-heart-red-velvet-cake-half-kg_1.jpg" width="200" height="180">
+      </div>
+       <div class="b1">
+        <a href="./Acakes.html"> <button>view More</button></a>
+       </div>
+         
+      </div>
+
+
+
+      <div class="Flower">
+        <div>
+           <h3>Flowers</h3>
+        </div>
+        <div class="rose">
+        <img src="https://www.fnp.com/images/pr/l/v200/blooming-joy-rose-bouquet_1.jpg" width="200" height="180">
+        </div>
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/magical-story-orchids-bouquet_1.jpg" width="220" height="180">
+      </div>
+
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/led-elegance-rose-embrace_1.jpg" width="200" height="180">
+      </div>
+
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/love-forever-red-rose-bouquet_1.jpg" width="220" height="180">
+      </div>
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/eternal-ivory-rose-crescent_1.jpg" width="200" height="180">
+       
+      </div>
+       <div class="b1">
+        <a href="./Flowers.html"> <button>view More</button></a>
+       </div>
+    </div>
+
+    <div class="gift">
+        <div>
+           <h3>Gifts</h3>
+        </div>
+        <div class="rose">
+        <img src="https://www.fnp.com/images/pr/l/v200/love-cheers-red-wine_1.jpg" width="200" height="180">
+        </div>
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/designer-wallet-n-belt-gift-set_1.jpg" width="220" height="180">
+      </div>
+
+      <div class="rose">
+       <img src="https://www.fnp.com/images/pr/l/v200/personalised-temperature-hydration-bottle_1.jpg" width="220" height="180">
+      </div>
+
+      <div class="rose">
+       <img src="https://www.fnp.com/assets/images/custom/for-her-2023/explore_more/Handbags_web.jpg" width="200" height="180">
+      </div>
+      <div class="rose">
+       <img src="https://www.fnp.com/assets/images/custom/for-her-2023/by_types/Jewellery_web_23mar.jpg" width="220" height="180">
+       
+      </div>
+       <div class="b1">
+        <a href="./gift.html"> <button>view More</button></a>
+       </div>
+    </div>
+      </div>
+      
+      <div>
+        <span>"Indulge in moments of sweetness"</span>
+      </div>
+
+      <div class="container">
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>Contact Us:</p>
+        <p>Email: info@gadgetstore.com</p>
+        <p>Phone: 1-800-GADGETS</p>
+        <p>Address: 123 Gadget Street, Cityville, Country</p>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Instagram</a>
+      </div>
+      <div class="subscription-form">
+        <form action="#" method="post">
+          <label for="email">Subscribe to our newsletter:</label>
+          <input type="email" id="email" name="email" placeholder="Your email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+      <div class="business-hours">
+        <p>Business Hours:</p>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+      <div class="map-location">
+        <p>Map Location:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.383020575007!2d-122.41912068519334!3d37.77492997975281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858094c7d4d787%3A0xa45b7e1e14980bee!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1648232013827!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin tristique eros nec scelerisque.</p>
+      </div>
+      <p>&copy; 2024 Gadget Store</p>
+    </footer>
+
+    </body>
+</html>
